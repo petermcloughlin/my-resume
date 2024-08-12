@@ -6,6 +6,9 @@
 .bg-color-three-reasons{
     background-color: #fff;
 }
+.bg-color-personal-info{
+    background-color: #f4f4f4;
+}
 .ui-menu-color-home{
     background-color: #e67e22;
 }
@@ -60,7 +63,7 @@ header{
 }
 
 .logo{
-    background: url('../images/rosie.jpg');
+    background: url('../images/Me.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
