@@ -12,8 +12,7 @@ function userInformationHTML(user){
                 </a>
             </div>
             <p>Followers:  ${user.followers} - Following ${user.following} <br>Repos: ${user.public_repos}</p>
-        </div>`;
-    
+        </div>`;    
 }
 
 function repoInformationHTML(repos){
@@ -37,6 +36,9 @@ function repoInformationHTML(repos){
 }
 
 function fetchGitHubInformation(event){
+    $('#gh-user-data').html('');
+    $('#gh-repo-data').html('');
+
     var username = $('#gh-username').val();
 
     if(!username){
@@ -68,3 +70,5 @@ function fetchGitHubInformation(event){
         }
     );
 }
+
+$(document).ready(fetchGitHubInformation);
