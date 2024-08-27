@@ -69,8 +69,7 @@ function fetchGitHubInformation(event){
                 console.log(errorResponse);
                 $('#gh-user-data').html(
                     `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);                
-            }
-            
+            }            
         }
     );
 }
