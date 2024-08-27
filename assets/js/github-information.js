@@ -21,18 +21,18 @@ function repoInformationHTML(repos){
     }
     var listItemsHTML = repos.map(function(repo){
         return `<li>
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-        </li>`;       
-        
+                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                </li>`;    
+
     });
     return `<div class="clearfix repo-list">
-            <p>
-                <strong>Repo List:</strong>                
-            </p>
-            <ul>
-                ${listItemsHTML.join("/n")}
-            </ul>
-        </div>`;
+                <p>
+                    <strong>Repo List:</strong>                
+                </p>
+                <ul>
+                    ${listItemsHTML.join("\n")}
+                </ul>
+            </div>`;
 }
 
 function fetchGitHubInformation(event){
