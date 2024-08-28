@@ -5,8 +5,7 @@ function sendMail(){
         reply_to: document.getElementById("emailaddress").value,
         message: document.getElementById("projectsummary").value
     }
-    emailjs.send("service_c3zaijp", "Peter", params).then(alert('Email sent!'));
-    confirmSent();
+    emailjs.send("service_c3zaijp", "Peter", params).then(confirmSent());    
     clearForm();
     removeMessage();
 }
