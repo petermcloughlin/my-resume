@@ -299,6 +299,11 @@ footer{
 .history-items{
     margin-bottom: 30px;
 }
+/*--------------------------------------Interests */
+#map { 
+    height: 340px; 
+    width: 220px;
+}
 /*--------------------------------------Contact Form */
 .contact-heading{
     font-family: "Exo", sans-serif;
